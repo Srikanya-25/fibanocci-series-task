@@ -1,0 +1,14 @@
+def fibonacci(n):
+if n <= 1:
+return n
+else:
+return fibonacci(n-1) + fibonacci(n-2)
+def generate_fibonacci_series(num_terms):
+fibonacci_series = []
+for i in range(num_terms):
+fibonacci_series.append(fibonacci(i))
+return fibonacci_series
+# Example usage:
+num_terms = 10
+fib_series = generate_fibonacci_series(num_terms)
+print("Fibonacci Series with", num_terms, "terms:", fib_series)
